@@ -6,7 +6,7 @@
 int bss;
 int stat = 1; //Variable statique
 
-int ex1(void* ptr) {
+int exo1(void* ptr) {
     int stack = 0; //Premiere variable dans la stack
     int *heap = (int *)malloc(10* sizeof(int));
     int pid = getpid();
