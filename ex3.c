@@ -236,7 +236,7 @@ int square(int a){
     return a*a;
 }
 
-int main(){
+int exo3(){
     int n = 10;
     chainedlist *start = NfirstInt(n);
     int res = length(start);
