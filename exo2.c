@@ -22,6 +22,10 @@ void exo2(){
     for (int i = 0; i <fileSize ; i++) {
         *(byte_ptr+i)=myByteArray[fileSize-1-i];
     }
-
+    int unmappedData = munmap(byte_ptr, st.st_size);
+    if (-1 == unmappedData)
+    {
+        perror("ERROR on munmap");
+    }
     close(fd);
 }
